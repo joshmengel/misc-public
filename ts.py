@@ -21,7 +21,7 @@ def main():
                                 log('[TASK '+str(x)+'] Successfully reserved cart for {}: {}'.format(name_options[ticket_number], f.url))
                                 try: 
                                     #insert you own webhook where it says url = ''
-                                    webhook = DiscordWebhook(url='https://discordapp.com/api/webhooks/693777400819089409/xFy32PRedfwHqNevk6z5_PwbXAQYR2UyOKaKHBZhFtZO7j9qyKLA2ksKboMfVJ8lHL2Q')
+                                    webhook = DiscordWebhook(url='')
                                     embed = DiscordEmbed(title='Reserved Cart - Ticketspace', color=3407684)
                                     embed.set_thumbnail(url=image)
                                     embed.add_embed_field(name = 'Event', value = title, inline = True)
