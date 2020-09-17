@@ -35,9 +35,10 @@ def main():
                                             hour = int(time[1:3])+1
                                         else:
                                             hour = int(time[1:3])
+                                        expires = '{}:{}'.format(hour, minute)
                                     except:
                                         expires = 'N/A'
-                                    expires = '{}:{}'.format(hour, minute)
+                                    
                                     embed.add_embed_field(name = 'Expires at', value = str(expires), inline = True)   
                                     embed.set_footer(text='@FootlockerNZ')
                                     embed.set_timestamp()
